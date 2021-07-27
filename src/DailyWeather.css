@@ -1,0 +1,9 @@
+.dailyWeather {
+  display: flex;
+  flex: auto.1;
+  flex-direction: column;
+  padding: 10px;
+  white-space: nowrap;
+  border-right: 1px solid rgba(78, 78, 78, 0.397);
+  font-size: 25px;
+}

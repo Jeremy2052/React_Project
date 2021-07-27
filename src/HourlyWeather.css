@@ -1,0 +1,8 @@
+.hourlyWeather {
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid rgba(78, 78, 78, 0.397);
+  padding: 10px;
+  white-space: nowrap;
+  font-size: 25px;
+}

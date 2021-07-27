@@ -1,38 +1,65 @@
-.App {
+.sidebar__chat {
+  display: flex;
+  height: 100vh;
+  /* width: 100%; */
+  /* flex-direction: column; */
+}
+
+.appLoading {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  width: 100%;
+}
+
+.appLoadingContents {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  padding-bottom: 100px;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.appLoadingContents > img {
+  height: 200px;
+  padding: 20px;
+  margin-bottom: 40px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.weatherComponent {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  /* width: 100%; */
+}
+
+.calendarComponent {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+}
+
+.movieComponent {
+  display: flex;
+  height: auto !important;
+  min-height: 100%;
+  background-color: rgb(29, 29, 29);
+  /* justify-content: center; */
+}
+
+.moviePickedComponent {
+  display: flex;
+  height: auto !important;
+  min-height: 100%;
+  background-color: rgb(17, 17, 17);
+  /* justify-content: center; */
+}
+
+.newsComponent {
+  display: flex;
+  height: auto !important;
+  min-height: 100%;
+  background-color: rgb(41, 41, 41);
+  /* justify-content: center; */
 }
