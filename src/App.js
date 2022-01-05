@@ -3,8 +3,6 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  useLocation,
-  useParams
 } from "react-router-dom";
 import Header from './Header';
 import Sidebar from './Sidebar';
@@ -88,7 +86,7 @@ function App() {
               </Route>
 
               <Route path='/music'>
-                <div className="moviePickedComponent">
+                <div className="">
                   <h5>music</h5>              
                 </div>
               </Route>

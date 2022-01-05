@@ -18,7 +18,7 @@ function Movies() {
     const api = axios.create({baseURL:BASE_URL});
     const getMovieData = async () =>{
       const response = await api.get('/trending/all/week?api_key=59a58eb798a5f7bc86acb2722b473620');
-      console.log(response.data.results)
+      // console.log(response.data.results)
       setMovieList(response.data.results);
     };
 

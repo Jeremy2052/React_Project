@@ -3,11 +3,8 @@ import './Header.css'
 import logo2 from './logo2.png'
 import { Avatar } from '@material-ui/core'
 import ChatOutlinedIcon from '@material-ui/icons/ChatOutlined';
-import MusicVideoIcon from '@material-ui/icons/MusicVideo';
-import ReceiptOutlinedIcon from '@material-ui/icons/ReceiptOutlined';
 import CloudOutlinedIcon from '@material-ui/icons/CloudOutlined';
 import OndemandVideoIcon from '@material-ui/icons/OndemandVideo';
-import ScheduleIcon from '@material-ui/icons/Schedule';
 import { useAuthState } from 'react-firebase-hooks/auth'
 import { auth } from './firebase'
 import { Link } from 'react-router-dom';
@@ -29,24 +26,17 @@ function Header() {
           </div>
         </Link>
 
-        <Link to='/calendar' style={{ textDecoration: 'none' }}>
+        {/* <Link to='/calendar' style={{ textDecoration: 'none' }}>
           <div className="header__icons">
             <ScheduleIcon />
             <span>Calendar</span>
           </div>
-        </Link>
+        </Link> */}
 
         <Link to='/movies' style={{ textDecoration: 'none' }}>
           <div className="header__icons">
             <OndemandVideoIcon />
             <span>Movies</span>
-          </div>
-        </Link>
-
-        <Link style={{ textDecoration: 'none' }}>
-          <div className="header__icons">
-            <MusicVideoIcon />
-            <span>Music</span>
           </div>
         </Link>
 
@@ -57,13 +47,13 @@ function Header() {
             <span>Weather</span>
           </div>
         </Link>
-
+{/* 
         <Link to='/news' style={{ textDecoration: 'none' }}>
           <div className="header__icons">
             <ReceiptOutlinedIcon/>
             <span>News</span>
           </div>
-        </Link>
+        </Link> */}
 
 
       </div>

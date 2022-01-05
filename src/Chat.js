@@ -102,11 +102,9 @@ function Chat() {
           const { message, timestamp, user, userImage, image } = doc.data();
           return (<Messages key={doc.id} message={message} timestamp={timestamp} user={user} userImage={userImage} image={image} />)
         })}
-        <div className="chatBottom" ref={chatRef} ></div>
-      </div>
-
-      <div className="chatInput">
-        <form>
+        <div className="chatBottom" ref={chatRef} >
+        <div className="chatInput">
+        <form className='forms'>
             <input value={input} onChange={(e) => setInput(e.target.value)} type="text" placeholder='Type a message' />
             <Button className='sendButton' hidden type='submit' onClick={sendMessage}>
               SEND
@@ -123,6 +121,10 @@ function Chat() {
           </form>
         
       </div>
+        </div>
+      </div>
+
+      
 
     </div>
   )

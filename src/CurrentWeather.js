@@ -8,9 +8,6 @@ function CurrentWeather({ currentData }) {
   const date = moment().format('MMMM Do YYYY');
   return (
     <div className='currentWeather'>
-
-      <input className='weather__input' type="text" placeholder='Search city' />
-
       <div className="currentContainer">
         <div className="weather__header">
           <h4>Today {date}</h4>
@@ -39,7 +36,7 @@ function CurrentWeather({ currentData }) {
 
       <div className="daily">
         {currentData.daily.slice(0, 7).map((day, i) => {
-          return (<DailyWeather key={i} temp_day={day.temp.day} temp_morn={day.temp.morn} temp_night={day.temp.night} humidity={day.humidity} wind_speed={day.wind_speed} />)
+          return (<DailyWeather key={i} id={i} temp_day={day.temp.day} temp_morn={day.temp.morn} temp_night={day.temp.night} humidity={day.humidity} wind_speed={day.wind_speed} />)
         })}
       </div>
 

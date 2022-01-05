@@ -1,6 +1,6 @@
 
 import React from 'react'
-import { Link } from 'react-router-dom'
+// import { Link } from 'react-router-dom'
 import './Article.css'
 
 function Article({article}) {

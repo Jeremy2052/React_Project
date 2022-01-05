@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { useLocation} from 'react-router-dom';
 import './MoviePicked.css';
 import movieTrailer from 'movie-trailer';
-import YouTube from 'react-youtube';
+// import YouTube from 'react-youtube';
 import { useState } from 'react';
 import ReactPlayer from 'react-player/youtube'
 
@@ -10,14 +10,14 @@ function MoviePicked() {
   // const {testValue} = useParams();
   const [trailer,setTrailer] = useState(null)
   const {state} = useLocation();
-  console.log(state);
+  // console.log(state);
 
 
   useEffect(()=>{
       movieTrailer(null,{tmdbId: state.movie.id})
       .then(response => {
         setTrailer(response)
-        console.log('response', response )
+        // console.log('response', response )
       });
     
   },[state.movie.id])

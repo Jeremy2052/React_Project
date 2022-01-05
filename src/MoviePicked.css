@@ -1,6 +1,7 @@
 .moviePicked {
   margin-top: 60px;
-  height: 100vh;
+  height: 100%;
+  width: 100%;
   color: white;
   display: flex;
   flex-direction: column;
@@ -13,7 +14,7 @@
 
 .movie__poster > img {
   width: 100%;
-  height: 50vh;
+  height: 60vh;
   mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
   /* background: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)); */
 }

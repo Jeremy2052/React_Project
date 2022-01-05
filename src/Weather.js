@@ -31,19 +31,20 @@ function Weather() {
 
       const response = await axios.get(`${process.env.REACT_APP_API_URL}/onecall?lat=${lat}&lon=${lon}&units=imperial&APPID=${process.env.REACT_APP_API_KEY}`);
       setCurrentData(response.data);
-      console.log('today response', response.data)
+      // console.log('today response', response.data)
     }
 
     fetchData();
   }, [lat, lon]);
 
-  console.log('Latitude: ', lat);
-  console.log('Longitude: ', lon);
+  // console.log('Latitude: ', lat);
+  // console.log('Longitude: ', lon);
 
   return (
     <div className='weather'>
       {(typeof currentData.current != 'undefined') ?
         (<>
+        <input className='weather__input' type="text" placeholder='Search city' />
           <CurrentWeather currentData={currentData} />
           {/* <HourlyWeather hourlyData={hourlyData} />
           <DailyWeather dailyData={dailyData} /> */}

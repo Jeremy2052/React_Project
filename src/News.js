@@ -6,20 +6,21 @@ import './News.css'
 import Article from './Article';
 import { Button } from '@material-ui/core';
 
-const API_KEY = 'aec2d6e3dea142259d475a1b4f25682c'
+
 const proxyURL = "https://cors-anywhere.herokuapp.com/"
 
 function News() {
 
   const [news,setNews] = useState([]);
-  const [searchTopic,setSearchTopic] = useState('elon');
+  const [searchTopic,setSearchTopic] = useState('spacex');
   
 
   useEffect(() => {
     
     const api = axios.create({baseURL:`${proxyURL}https://newsapi.org/v2`})
+
     const getNews = async () => {
-      const results =  await api.get(`/everything?q=${searchTopic}&apiKey=${API_KEY}`);
+      const results =  await api.get(`/everything?q=${searchTopic}&apiKey=aec2d6e3dea142259d475a1b4f25682c`);
       console.log(results.data.articles)
       setNews(results.data.articles);
     }

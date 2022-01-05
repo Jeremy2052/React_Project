@@ -4,7 +4,7 @@ import React from 'react'
 import './Messages.css'
 
 function Messages({ message, timestamp, user, userImage, image }) {
-  console.log('image', image)
+  // console.log('image', image)
 
   return (
     <div className='messages'>

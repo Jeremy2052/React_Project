@@ -7,7 +7,7 @@
   /* height: 100%; */
   border-top: 1px solid rgb(115, 250, 243);
   color: white;
-  max-width: 300px;
+  max-width: 200px;
   /* overflow-y: scroll; */
 }
 
@@ -61,4 +61,10 @@
 
 .button {
   display: none !important;
+}
+
+@media (max-width: 380px) {
+  .sidebar {
+    max-width: 100px;
+  }
 }
